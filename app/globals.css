@@ -3,7 +3,7 @@
   --c-gray-dark: #525c7a;
   --c-gray-medium-dark: #7884a5;
   --c-gray-medium-light: #a2acc7;
-  --c-gray-light: #C9D0E1;
+  --c-gray-light: #c9d0e1;
   --c-gray-extra-light: #f8faff;
   --c-green: #4fba67;
 }
@@ -34,4 +34,11 @@ h1 {
   font-weight: 700;
   line-height: 7rem;
   letter-spacing: -0.0576rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  letter-spacing: -0.0056rem;
 }

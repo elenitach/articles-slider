@@ -1,0 +1,47 @@
+.image {
+  object-fit: cover;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 34.4rem;
+  height: 34.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.imageWrapperLarge {
+  width: 68.8rem;
+}
+
+.circle {
+  border-radius: 60rem;
+}
+
+.leafLTRB {
+  border-radius: 0 22rem;
+}
+
+.leafRTLB {
+  border-radius: 22rem 0;
+}
+
+.roundCornersSquare {
+  border-radius: 12rem 0;
+}
+
+.title {
+    margin-bottom: 1.6rem;
+  color: var(--c-gray-dark);
+  cursor: pointer;
+}
+
+.title:hover {
+    color: var(--c-green);
+}
+
+.date {
+  color: var(--c-gray-medium-light);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}

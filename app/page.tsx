@@ -1,3 +1,4 @@
+import Slider from './components/Slider/Slider';
 import styles from './page.module.css'
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
           хозяйстве
         </p>
       </div>
+      <Slider />
     </main>
   );
 }
