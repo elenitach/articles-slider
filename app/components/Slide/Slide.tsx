@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./Slide.module.css";
 import clsx from "clsx";
+import React from "react";
 
 export const shapes = [
   "circle",
@@ -14,13 +15,16 @@ export type Props = {
   shape: (typeof shapes)[number];
   title: string;
   date: string;
-  imageSrc: string;
+  imageSrc: string; 
 };
 
-export default function Slide({ shape, title, date, imageSrc }: Props) {
+const Slide = React.forwardRef<HTMLDivElement, Props>(function Slide(
+  { shape, title, date, imageSrc },
+  ref
+) {
   const size = title.length > 35 ? "large" : "small";
   return (
-    <div>
+    <div ref={ref}>
       <div
         className={clsx(styles.imageWrapper, {
           [styles.imageWrapperLarge]: size === "large",
@@ -39,4 +43,6 @@ export default function Slide({ shape, title, date, imageSrc }: Props) {
       </div>
     </div>
   );
-}
+});
+
+export default Slide;

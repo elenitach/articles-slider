@@ -29,14 +29,18 @@
   border-radius: 12rem 0;
 }
 
+.info {
+  padding: 0 0.8rem;
+}
+
 .title {
-    margin-bottom: 1.6rem;
+  margin-bottom: 1.6rem;
   color: var(--c-gray-dark);
   cursor: pointer;
 }
 
 .title:hover {
-    color: var(--c-green);
+  color: var(--c-green);
 }
 
 .date {
@@ -44,4 +48,15 @@
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 1.8rem;
+}
+
+@media (max-width: 768px) {
+  .imageWrapper {
+    width: 27rem;
+    height: 27rem;
+  }
+
+  .imageWrapperLarge {
+    width: 54rem;
+  }
 }

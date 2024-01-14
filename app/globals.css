@@ -42,3 +42,9 @@ h4 {
   line-height: 2.8rem;
   letter-spacing: -0.0056rem;
 }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+}

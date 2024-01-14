@@ -18,5 +18,32 @@
 }
 
 .arrow {
+  padding: 1.2rem 0;
+  border: none;
+  background: none;
   cursor: pointer;
+  color: var(--c-gray-light);
+}
+
+.arrowLarge:hover {
+  color: var(--c-gray-medium-dark);
+}
+
+.arrowSmall {
+    display: none;
+    color: var(--c-gray-medium-dark);
+}
+
+.arrowSmall:hover {
+    color: var(--c-gray-medium-light);
+}
+
+@media (max-width: 480px) {
+    .arrowLarge {
+        display: none;
+    }
+
+    .arrowSmall {
+        display: block;
+    }
 }
